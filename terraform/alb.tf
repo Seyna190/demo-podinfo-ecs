@@ -17,7 +17,7 @@ resource "aws_security_group" "alb" {
   }
 }
 
-resource "aws_lb" "main" {
+resource "aws_lb1" "main" {
   name               = "${var.app_name}-alb"
   internal           = false
   load_balancer_type = "application"
